@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<title>Nová Záložka</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Linefont:wdth,wght@112.5,442&family=Nova+Square&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/script.js" defer></script>
+</head>
+<body>
+	<div id="letter-container"></div>
+	<main>
+		<div id="container">
+			<div id="content">
+				<div id="clock">
+					<span class="digit">0</span>
+					<span class="digit">0</span>
+					<span class="separator">:</span>
+					<span class="digit">0</span>
+					<span class="digit">0</span>
+					<span class="separator">:</span>
+					<span class="digit">0</span>
+					<span class="digit">0</span>
+				</div>
+				<div id="line"></div>
+				<div class="search-bar" data-url="https://www.google.com/search?q=">
+					<input type="text" placeholder="Hledat na Googlu..." class="search-input">
+					<button class="search-button">
+						<img draggable="false" src="img/google.svg" alt class="search-icon">
+					</button>
+				</div>
+				<div class="search-bar" data-url="https://cs.wikipedia.org/wiki/Special:Search/">
+					<input type="text" placeholder="Hledat na Wikipedii..." class="search-input">
+					<button class="search-button">
+						<img draggable="false" src="img/wikipedia.png" alt class="search-icon" style="background-color: white; border-radius: 7px;">
+					</button>
+				</div>
+				<ul id ="links">
+					<!-- Drive, Gmail, YouTube, Reddit, ChatGPT, Nyx, Afantázie, Calendar -->
+					<li class="tile">
+						<a draggable="false" href="https://drive.google.com/?authuser=0" target="_top"></a>
+						<img draggable="false" src="img/google_drive.png" alt class="link-icon">
+						<span class="link-text">Drive</span>
+					</li>
+					<li class="tile">
+						<a draggable="false" href="https://mail.google.com/?authuser=0" target="_top"></a>
+						<img draggable="false" src="img/gmail.ico" alt class="link-icon">
+						<span class="link-text">Gmail</span>
+					</li>
+					<li class="tile">
+						<a draggable="false" href="https://www.youtube.com/" target="_top"></a>
+						<img draggable="false" src="img/youtube.png" alt class="link-icon">
+						<span class="link-text">YouTube</span>
+					</li>
+					<li class="tile">
+						<a draggable="false" href="https://www.reddit.com/" target="_top"></a>
+						<img draggable="false" src="img/reddit.webp" alt class="link-icon">
+						<span class="link-text">Reddit</span>
+					</li>
+					<li class="tile">
+						<a draggable="false" href="https://chat.openai.com/" target="_top"></a>
+						<img draggable="false" src="img/chatgpt.png" alt class="link-icon">
+						<span class="link-text">ChatGPT</span>
+					</li>
+					<li class="tile">
+						<a draggable="false" href="https://nyx.chat/" target="_top"></a>
+						<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 220 220" class="link-icon" draggable="false">
+							<defs>
+								<mask id="nyx-holes">
+									<rect width="100%" height="100%" fill="white"></rect>
+									<circle cx="50" cy="50" r="15" fill="black"></circle>
+									<circle cx="170" cy="50" r="15" fill="black"></circle>
+									<circle cx="50" cy="170" r="15" fill="black"></circle>
+									<circle cx="170" cy="170" r="15" fill="black"></circle>
+								</mask>
+							</defs>
+							<circle cx="50" cy="50" r="50" class="nyx-logo" mask="url(#nyx-holes)"></circle>
+							<circle cx="170" cy="50" r="50" class="nyx-logo" mask="url(#nyx-holes)"></circle>
+							<circle cx="50" cy="170" r="50" class="nyx-logo" mask="url(#nyx-holes)"></circle>
+							<circle cx="170" cy="170" r="50" class="nyx-logo" mask="url(#nyx-holes)"></circle>
+							<polygon points="80,60 60,80 140,160 160,140" class="nyx-logo"></polygon>
+						</svg>
+						<span class="link-text">Nyx</span>
+					</li>
+					<li class="tile">
+						<a draggable="false" href="https://afantazie.cz/" target="_top"></a>
+						<img draggable="false" src="img/afantazie.png" alt class="link-icon">
+						<span class="link-text">Afantázie</span>
+					</li>
+					<li class="tile">
+						<a draggable="false" href="https://calendar.google.com/" target="_top"></a>
+						<img draggable="false" src="img/google_calendar.png" alt class="link-icon">
+						<span class="link-text">Kalendář</span>
+					</li>
+				</ul>
+			</div>
+			<footer>
+				<p>&copy; Matěj Smetana 2025</p>
+			</footer>	
+		</div>
+	</main>
+</body>
+</html>
